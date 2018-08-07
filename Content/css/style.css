@@ -1,0 +1,113 @@
+﻿.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+.phnNumber {
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+.bannerImg {
+	width: 100%;
+}
+
+.annc {
+	color: red;
+}
+
+.headerMsg {
+	color: #003366;
+}
+
+.hr-guardu {
+	color: #003366;
+	background-color: #003366;
+	height: 6px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.topMargin {
+	margin-top: 20px;
+}
+
+.dlLogo {
+	margin: 6px 10px;
+}
+
+footer /*sticky at bottom of page */ {
+	padding-top: 5px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	font-size: 9px;
+	font-weight: bold;
+	text-align: center;
+	color: #515152;
+	background-color: #c0c0c0;
+	background-image: url(../imgs/bg_footer.png);
+	background-repeat: repeat-x;
+	background-size: contain;
+	background-position-y: bottom;
+	padding-bottom: 10px;
+	border-top: 2px #E0DDDE solid;
+}
+
+.footer-endOfContent /*will place footer at end of content no matter where content ends*/ {
+	position: relative;
+}
+
+
+
+
+/*View port Modifications for Desktop*/
+
+@media screen and (min-width: 1200px) {
+	.bannerImg {
+		margin-left: 100px;
+		max-width: 908px;
+	}
+
+	.welcome {
+		padding-left: 30px;
+	}
+	
+	body {
+	margin-bottom: 0px;
+	}
+}
+
+/* Collapse to hamburger menu sooner so searchbar doesn't break navbar at smaller sizes */
+@media (max-width: 993px) {
+	.navbar-header {
+		float: none;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	}
+
+	.navbar-nav {
+		float: none!important;
+		margin: 7.5px -15px;
+	}
+	.navbar-nav>li {
+		float: none;
+	}
+	.navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
